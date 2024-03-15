@@ -2,8 +2,8 @@
 
 This is a simple tool designed to help users manage their tasks efficiently. Built with Node.js and Express, it supports CRUD operations allowing users to create, read, update, and delete tasks. This document provides setup instructions, usage guidelines, and contribution information.
 
-You will have two hours for when you fork the repository to submit a pull request to the original repository.
-Please stay within the time limit. If you go over time, please submit the project as is. We will review the project and provide feedback.
+You will have two hours for when you fork the repository to submit a pull request to this repository.
+Please stay within the time limit. If you go over time, please submit the project as is. We will review the project after pull request is open.
 
 ## Pre-requisites
 
@@ -40,13 +40,15 @@ To set up the project locally, follow these steps:
 cp .env.example .env
 ```
 
-4. Run npm start to start the server.
+4. Run `npm start` to start the server.
+
+Note: Database may be dropped and recreated on every server restart or on schema changes.
 
 ## Usage
 
 ## Curl Commands
 
-Creating a Task you can use this test curl commend or use a tool Postman
+Creating a Task you can use this test curl commend or use a tool like Postman
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{"title":"My Task"}' http://localhost:3000/tasks
